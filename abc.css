@@ -1,0 +1,15 @@
+h1 {
+  text-align: left;
+  font-size: 30px;
+}
+.bnt {
+  background-color: black;
+  color: white;
+}
+div {
+  float: right;
+}
+.bell {
+  width: 2%;
+  height: 2%;
+}

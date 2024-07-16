@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .logo {
+        font-size: 40px;
+        font-weight: 400;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+      }
+      .magnify,
+      .bell {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+      }
+      .bnt {
+        border-radius: 13px;
+        background-color: black;
+        color: white;
+        margin-left: 10px;
+        height: 30px;
+        width: 70px;
+        font-weight: 800;
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .section div {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .arrow,
+      .clock,
+      .wifi {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+      .select-container {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+      .add {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px;
+      }
+      .options {
+        display: flex;
+        align-items: center;
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center; /* 중앙정렬 */
+      }
+      .main div {
+        width: 22%;
+        height: 450px;
+        margin: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 3px;
+        box-sizing: border-box;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .main div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .logo {
+        font-family: "Nanum Gothic Coding", monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <span class="logo">velog</span>
+      <div class="right">
+        <img class="magnify" src="/velog/magnify.png" />
+        <img class="bell" src="/velog/bell.png" />
+        <input class="bnt" type="button" value="로그인" />
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="options">
+        <div class="trending">
+          <img class="arrow" src="/velog/arrow.png" />
+          <span><b>트렌딩</b></span>
+        </div>
+        <div class="new">
+          <img class="clock" src="/velog/clock.png" />
+          <span><b>최신</b></span>
+        </div>
+        <div class="feed">
+          <img class="wifi" src="/velog/wifi.png" />
+          <span><b>피드</b></span>
+        </div>
+      </div>
+      <div class="select-container">
+        <select>
+          <option>오늘</option>
+          <option selected>이번 주</option>
+          <option>이번 달</option>
+          <option>올해</option>
+        </select>
+        <div><img class="add" src="/velog/ad" /></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div>내용</div>
+      <div>내용</div>
+      <div>내용</div>
+      <div>내용</div>
+    </div>
+  </body>
+</html>
